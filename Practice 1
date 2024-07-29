@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      #DIV1, #DIV2 {
+        background-color: black;
+        color: white;
+      }
+      
+      #DIV3 {
+        background-color: #F8EDED;
+        color: black;
+      }
+      
+      #DIV4 {
+        background-color: #FF8225;
+        color: black;
+      }
+      
+      #DIV5 {
+        background-color: #B43F3F;
+        color: black;
+      }
+      
+      .container {
+        width: 100%;
+        overflow: hidden;
+      }
+      
+      .container div {
+        width: 33%;
+        float: left;
+      }
+      
+      .note {
+        font-size: 133%;
+        color: red;
+      }
+    </style>
+    <script>
+      function myFunction() {
+        var x = document.getElementsByClassName("note");
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>HTML DIV EXAMPLE</h1>
+    
+    <div id="DIV1">
+      <h1>Div One</h1>
+      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. 
+      Tristique interdum pulvinar ullamcorper ac gravida hac lacus 
+      nibh nunc. Donec porta sem habitasse luctus lobortis ad aliquet. 
+      Aptent tellus donec maximus elit cubilia aptent magna non. 
+      Sapien neque ac nisi hac arcu. Tellus duis semper donec quis ipsum. 
+      Consequat posuere morbi dignissim blandit eleifend dis eu. 
+      Odio posuere viverra gravida cursus ultrices sem conubia. 
+      Fusce magna facilisi integer leo vestibulum consectetur 
+      est porttitor.</p>
+    </div>
+    
+    <div id="DIV2">
+      <h1>Div Two</h1>
+      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. 
+      Tristique interdum pulvinar ullamcorper ac gravida hac lacus 
+      nibh nunc. Donec porta sem habitasse luctus lobortis ad aliquet. 
+      Aptent tellus donec maximus elit cubilia aptent magna non. 
+      Sapien neque ac nisi hac arcu. Tellus duis semper donec quis ipsum. 
+      Consequat posuere morbi dignissim blandit eleifend dis eu. 
+      Odio posuere viverra gravida cursus ultrices sem conubia. 
+      Fusce magna facilisi integer leo vestibulum consectetur 
+      est porttitor.</p>
+    </div>
+    
+    <div class="container">
+      <div id="DIV3">
+        <h1>Div Three</h1>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. 
+        Tristique interdum pulvinar ullamcorper ac gravida hac lacus 
+        nibh nunc. Donec porta sem habitasse luctus lobortis ad aliquet. 
+        Aptent tellus donec maximus elit cubilia aptent magna non.</p>
+      </div>
+      
+      <div id="DIV4">
+        <h1>Div Four</h1>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. 
+        Tristique interdum pulvinar ullamcorper ac gravida hac lacus 
+        nibh nunc. Donec porta sem habitasse luctus lobortis ad aliquet. 
+        Aptent tellus donec maximus elit cubilia aptent magna non.</p>
+      </div>
+      
+      <div id="DIV5">
+        <h1>Div Five</h1>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. 
+        Tristique interdum pulvinar ullamcorper ac gravida hac lacus 
+        nibh nunc. Donec porta sem habitasse luctus lobortis ad aliquet. 
+        Aptent tellus donec maximus elit cubilia aptent magna non.</p>
+      </div>
+    </div>
+    
+    <h1>This is an <span class="note">Important</span> heading</h1>
+    <p>This contains <span class="note">important</span> information</p>
+    <button onclick="myFunction()">Hide</button>
+  </body>
+</html>
+
