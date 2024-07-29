@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script>
+      function dateTimeFunction() {
+        document.getElementById('display').innerHTML = new Date().toString();
+      }
+      
+      function resetFunction() {
+        document.getElementById('display').innerHTML = "";
+      }
+      
+      function changeText() {
+        document.getElementById('change').innerHTML = "Goodbye, World!";
+        document.getElementById('div2').className = "textChangeChanged";
+      }
+      
+      function resetText() {
+        document.getElementById('change').innerHTML = "Hello, World!";
+        document.getElementById('div2').className = "textChange";
+      }
+    </script>
+    
+    <style>
+      .date {
+        background-color: black;
+        color: white;
+        padding: 20px;
+      }
+      
+      .textChange {
+        background-color: #FFF19F;
+        color: black;
+        padding: 20px;
+      }
+      
+      .textChangeChanged {
+        background-color: black;
+        color: white;
+        padding: 20px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="date">
+      <h1>Date Function</h1>
+      <button onclick="dateTimeFunction()">Time and Date</button>
+      <button onclick="resetFunction()">Reset</button>
+      <p id="display"></p>
+    </div>
+    
+    <br>
+    
+    <div class="textChange" id="div2">
+      <h1>Change Text</h1>
+      <button onclick="changeText()">Change Text</button>
+      <button onclick="resetText()">Reset</button>
+      <p id="change">Hello, World!</p>
+    </div>
+  </body>
+</html>
