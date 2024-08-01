@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+    	<title>Web 1</title>
+        <style>
+            body{
+            	text-align: center; 
+                background-color: black; 
+                color: white;
+            }
+        	#Button1, #Button2{
+            	width: 20%;
+                padding: 1%; 
+                border-radius: 8px; 
+                border: none;
+            }
+        </style> 
+        <script>
+        	function tryFunct(){
+            	document.getElementById("p1").innerHTML = "A Paragraph";	
+            }
+            
+            function resetFunct(){
+                document.getElementById("p1").innerHTML = "Hello JavaScript!";
+            }
+        </script>
+    </head>
+    <body>
+    	<h1>My Web Page</h1>
+        <p id="p1">Hello JavaScript!</p>
+        <button id="Button1" type="button!" onclick="tryFunct()">Click Me</button>
+        <br><br>  
+        <button id="Button2" type="button2" onclick="resetFunct()">Reset</button>
+    </body> 
+</html>
