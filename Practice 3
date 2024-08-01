@@ -8,12 +8,24 @@
                 background-color: black; 
                 color: white;
             }
-        	#Button1, #Button2{
+            p{
+            	font-size: 15px;
+            }
+        	.BTN{
             	width: 20%;
-                padding: 1%; 
+                padding: 20px; 
                 border-radius: 8px; 
                 border: none;
+                background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%); 
+                color: white;
+                transition: 0.5s; 
+                background-size: 200% auto;
+                font-size: 15px;
             }
+            .BTN:hover{
+           		background-position: right center;
+            }
+            
         </style> 
         <script>
         	function tryFunct(){
@@ -21,15 +33,15 @@
             }
             
             function resetFunct(){
-                document.getElementById("p1").innerHTML = "Hello JavaScript!";
+                document.getElementById("p1").innerHTML = "<u>Hello JavaScript!</u>";
             }
         </script>
     </head>
     <body>
     	<h1>My Web Page</h1>
         <p id="p1">Hello JavaScript!</p>
-        <button id="Button1" type="button!" onclick="tryFunct()">Click Me</button>
+        <button class="BTN Button1" type="button!" onclick="tryFunct()">Click Me</button>
         <br><br>  
-        <button id="Button2" type="button2" onclick="resetFunct()">Reset</button>
+        <button class="BTN Button2" type="button2" onclick="resetFunct()">Reset</button>
     </body> 
 </html>
